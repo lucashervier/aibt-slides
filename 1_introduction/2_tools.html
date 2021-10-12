@@ -128,25 +128,26 @@
                         - Copy the generated token
                         <div text-align="center"><img src="imgs/git_settings5.png" width="700" height="auto"></div>
                         - Save it somewhere safe and easy to access
-                        --
-                        ### Exercise
+                        ---
+                        ### Exercise (Linux/MacOS users)
                         Congrats 🎉🔥! We are now ready to set our working environment and to download the repository which
                         will contain all the course materials. In order to do so, we will now open a command shell!
                         ```shell
                         ~/firstname.name$
                         ```
                         If you have never touch a shell in your life, this [cheat sheet](http://www.mathcs.emory.edu/~valerie/courses/fall10/155/resources/unix_cheatsheet.html) may interest you!
+                        
                         --
                         ## Git and GitHub
-                        ### Get course materials
+                        ### Get course materials (Linux/MacOS users)
                         We first need to `clone` the repository
                         ```shell
                         ~/firstname.name$ git clone https://github.com/lucashervier/aibt.git
                         ```
                         The command shell will ask you for your credentials *i.e* you GitHub id
-                        and the token we previously created
+                        and the token we previously created (or your password on your personnal computer).
                         --
-                        ### Get course materials
+                        ### Get course materials (Linux/MacOS users)
                         The course is downloaded, it is now time to go to your course folder
                         ```shell
                         ~/firstname.name$ cd aibt
@@ -162,7 +163,7 @@
                         ~/1_introduction$ cp *.ipynb student/
                         ```
                         --
-                        ### Get course materials
+                        ### Get course materials (Linux/MacOS users)
 
                         Lessons would be added for every lesson. In order to get it you will need to go back
                         to the aibt folder location and to make a `git pull` command.
@@ -174,13 +175,60 @@
                         ```shell
                         ~/aibt$ git pull
                         ```
-
                         ---
-                        ## Setting up your working environment
+                        ### Exercise (Windows users)
+                        Congrats 🎉🔥! We are now ready to set our working environment and to download the repository which
+                        will contain all the course materials. In order to do so, we will now open a command shell (research bar -> Command)!
+                        ```shell
+                        C:\Users\firstname.name>
+                        ```
+                        If you have never touch a command prompt in your life, this [cheat sheet](http://www.cs.columbia.edu/~sedwards/classes/2015/1102-fall/Command%20Prompt%20Cheatsheet.pdf) may interest you!
+                        
+                        --
+                        ## Git and GitHub
+                        ### Get course materials (Windows users)
+                        We first need to `clone` the repository
+                        ```shell
+                        C:\Users\firstname.name> cd Documents
+                        C:\Users\firstname.name\Documents> git clone https://github.com/lucashervier/aibt.git
+                        ```
+                        The command shell will ask you for your credentials *i.e* you GitHub id
+                        and the token we previously created (or your password on your personnal computer).
+                        --
+                        ### Get course materials (Windows users)
+                        The course is downloaded, it is now time to go to your course folder
+                        ```shell
+                        C:\Users\firstname.name\Documents> cd aibt
+                        ```
+                        And since it is the first lesson we'll go the corresponding folder
+                        ```shell
+                        C:\Users\firstname.name\Documents\aibt> cd 1_introduction
+                        ```
+                        For practical reasons, we recommend that for each lessons to create a student folder
+                        in each course classes and to copy the `*.ipynb` files to that location.
+                        ```shell
+                        C:\Users\firstname.name\Documents\aibt\1_introduction> mkdir student
+                        C:\Users\firstname.name\Documents\aibt\1_introduction> copy *.ipynb student
+                        ```
+                        --
+                        ### Get course materials (Windows users)
+
+                        Lessons would be added for every lesson. In order to get it you will need to go back
+                        to the aibt folder location and to make a `git pull` command.
+                        ```shell
+                        C:\Users\firstname.name\Documents\aibt\1_introduction> cd ..
+                        C:\Users\firstname.name\Documents\aibt>
+                        ```
+                        Once there at the beginning of every class you should do a `git pull` to get the updates of the course
+                        ```shell
+                        C:\Users\firstname.name\Documents\aibt> git pull
+                        ```
+                        ---
+                        ## Setting up your working environment (Linux/MacOS users)
                         As a good practice, it is nice to have a Python environment per project, especially to avoid
                         inconvenient versionning conflict.
                         ```shell
-                        ~/aibt$ module load python/3.7
+                        ~/aibt$ module load python/3.7 (on ISAE's machines)
                         ~/aibt$ python -m venv aibt_venv 
                         ```
                         We just created a virtual environment for Python, we will now activate this environment
@@ -190,12 +238,34 @@
                         (aibt_venv) ~/aibt$
                         ```
                         --
-                        ## Setting up your working environment
+                        ## Setting up your working environment (Linux/MacOS users)
                         Now we have an empty Python environment! We will add the library we previously talked about
                         ```shell
                         (aibt_venv) ~/aibt$ pip install -r requirements.txt
                         ```
                         We are soon ready to tackle our first Use Case !
+        
+                        ---
+                        ## Setting up your working environment (Windows users)
+                        As a good practice, it is nice to have a Python environment per project, especially to avoid
+                        inconvenient versionning conflict.
+                        ```shell
+                        C:\Users\firstname.name\Documents\aibt> python -m venv aibt_venv 
+                        ```
+                        We just created a virtual environment for Python, we will now activate this environment
+                        (don't forget to do it every time).
+                        ```shell
+                        C:\Users\firstname.name\Documents\aibt>aibt_venv\Scripts\activate
+                        (aibt_venv) C:\Users\firstname.name\Documents\aibt>
+                        ```
+                        --
+                        ## Setting up your working environment (Windows users)
+                        Now we have an empty Python environment! We will add the library we previously talked about
+                        ```shell
+                        (aibt_venv)C:\Users\firstname.name\Documents\aibt> python -m pip install -r requirements.txt
+                        ```
+                        We are soon ready to tackle our first Use Case !
+
                         ---
                         ## Jupyter Notebook
 
@@ -207,7 +277,7 @@
                         > <div style="text-align:right"><cite><a href="https://jupyter.org/">- Jupyter Org</a></cite></div>
 
                         --
-                        ## Jupyter Notebook
+                        ## Jupyter Notebook (Linux/MacOS Users)
     
                         Load and set our virtual environment as the default python kernel in Jupyter
                         ```shell
@@ -217,6 +287,18 @@
                         Now we can open jupyter:
                         ```shell
                         (aibt_venv) ~/aibt$ jupyter notebook&
+                        ```
+                        --
+                        ## Jupyter Notebook (Windows Users)
+    
+                        Load and set our virtual environment as the default python kernel in Jupyter
+                        ```shell
+                        (aibt_venv) C:\Users\firstname.name\Documents\aibt> python -m pip install jupyter
+                        (aibt_venv) C:\Users\firstname.name\Documents\aibt> ipython kernel install --name "aibt_venv" --user
+                        ```
+                        Now we can open jupyter:
+                        ```shell
+                        (aibt_venv) C:\Users\firstname.name\Documents\aibt> jupyter notebook&
                         ```
 
                         --
@@ -232,7 +314,7 @@
                         If you want to go a little bit deeper you can check this tutorial:
                         <div style="text-align:center"><iframe width="540" height="200" src="https://www.youtube.com/embed/HW29067qVWk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                         ---
-                        ## What To remember
+                        ## What To remember (Linux/MacOS Users)
                         - At the beginning of each course go to your aibt folder and get all the updates:
                         ```shell
                         ~/firstname.name$ cd aibt
@@ -247,7 +329,7 @@
                         ~/aibt$
                         ```
                         --
-                        ## What To remember
+                        ## What To remember (Linux/MacOS Users)
                         - Activate your virtual environment
                         ```shell
                         ~/aibt$ . aibt_venv/bin/activate 
@@ -257,7 +339,33 @@
                         ```shell
                         (aibt_venv) ~/aibt$ jupyter notebook &
                         ```
-                        You can of course do all those steps at home to play again those notebooks! 
+                        You can of course do all those steps at home to play again those notebooks!
+                        ---
+                        ## What To remember (Windows Users)
+                        - At the beginning of each course go to your aibt folder and get all the updates:
+                        ```shell
+                        C:\Users\firstname.name> cd path\to\aibt
+                        C:\path\to\aibt> git pull
+                        ```
+                        - Go to the class folder and copy all the `*.ipynb` files in a student folder
+                        ```shell
+                        C:\path\to\aibt> cd class_folder
+                        C:\path\to\aibt\class_folder> mkdir student
+                        C:\path\to\aibt\class_folder> copy *.ipynb student 
+                        C:\path\to\aibt\class_folder> cd .. 
+                        C:\path\to\aibt>
+                        ```
+                        --
+                        ## What To remember (Windows Users)
+                        - Activate your virtual environment
+                        ```shell
+                        C:\path\to\aibt>aibt_venv\Scripts\activate 
+                        (aibt_venv) C:\path\to\aibt>
+                        ```
+                        - Launch jupyter once its done 
+                        ```shell
+                        (aibt_venv) C:\path\to\aibt> jupyter notebook &
+                        ```
                         ---
                         ## A word on today's UC
                         Today Use Case will have 80 features towards houses. One of them being the sale price.
