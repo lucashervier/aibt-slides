@@ -59,6 +59,7 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Schedule</a>
                         <div class="dropdown-menu rounded-0 m-0">
+                            <a href="../../schedule/23-24.html" class="dropdown-item">2023/2024</a>
                             <a href="../../schedule/22-23.html" class="dropdown-item">2022/2023</a>
                             <a href="../../schedule/21-22.html" class="dropdown-item">2021/2022</a>
                         </div>
@@ -80,13 +81,11 @@
                 <!-- Intro catch phrase -->
                 <div class="d-flex flex-column text-left mb-3">
                     <p class="section-title pr-5"><span class="pr-2">Detail Page</span></p>
-                    <h1 class="mb-3">Genetic Algorithm and A*</h1>
+                    <h1 class="mb-3">Introduction to Reinforcement Learning</h1>
 
-                    <p align="justify"> In this class you will learning AI techniques that are not data based 
-                        (<it>i.e.</it> not machine learning). Specifically, you will learn some algorithm that should help
-                        you to find the shortest path to exit a maze. This particular problem will be adressed with two algorithm:
-                        Genetic Algorithm and A*. Therefore, you will learn both approach, how they work and in which case you
-                        should use them (or not)!                   
+                    <p> In this class, you will have the opportunity to investigate and challenge the fundamental
+                        algorithms of this field. The theory will also be covered to ensure this notebook is standalone.
+                        Namely, you will have the opportunity to work on a practical use case, good luck!
                     </p>
 
                 </div>
@@ -97,12 +96,22 @@
                     <div class="row">
                         <div class="col-lg-4 mb-5">
                             <div class="card border-0 bg-primary shadow-sm pb-2" style="max-width: 250px;">
+                                <img class="card-img-top bg-light mb-2" src="../../img/uc_logo.png" width="70" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title text-white text-center">RL Recap</h4>
+                                    <br>
+                                </div>
+                                <a href="AIBT_RL_SUPPORT.pdf" target="_blank" class="btn btn-primary px-4 mx-auto mb-4">See Now</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-5">
+                            <div class="card border-0 bg-primary shadow-sm pb-2" style="max-width: 250px;">
                                 <img class="card-img-top bg-light mb-2" src="../../img/notebook_logo.png" width="70" alt="">
                                 <div class="card-body text-white text-center">
-                                    <h4 class="card-title text-white">Other AI techniques</h4>
+                                    <h4 class="card-title text-white">RL Notebook</h4>
                                     <small>(Only Granted to AIBT student)</small>
                                 </div>
-                                <a href="https://github.com/lucashervier/aibt/blob/main/02_other_ai/other_ai_techniques.ipynb" target="_blank" class="btn btn-primary px-4 mx-auto mb-4">See Now</a>
+                                <a href="https://github.com/lucashervier/aibt/blob/main/07_reinforcement_learning/Reinforcement_learning_student.ipynb" target="_blank" class="btn btn-primary px-4 mx-auto mb-4">See Now</a>
                             </div>
                         </div>
                     </div>
@@ -113,19 +122,19 @@
                     <h2 class="mb-4 ml-3">Skills you will acquire</h2>
                     <div class="row align-items-center">
                         <div class="col-4 py-1 ml-3">
-                            <i class="fa fa-check text-primary mr-3"></i>Shortest path problems
+                            <i class="fa fa-check text-primary mr-3"></i>Sequential Problem
                         </div>
                         <div class="col-4 py-1 ml-3">
-                            <i class="fa fa-check text-primary mr-3"></i>Greedy algorithm
+                            <i class="fa fa-check text-primary mr-3"></i>RL taxonomy
                         </div>
                         <div class="col-4 py-1 ml-3">
-                            <i class="fa fa-check text-primary mr-3"></i>Genetic algorithm
+                            <i class="fa fa-check text-primary mr-3"></i>Policy Evaluation
                         </div>
                         <div class="col-4 py-1 ml-3">
-                            <i class="fa fa-check text-primary mr-3"></i>A* algorithm
+                            <i class="fa fa-check text-primary mr-3"></i>Q-learning
                         </div>
                         <div class="col-4 py-1 ml-3">
-                            <i class="fa fa-check text-primary mr-3"></i>Improve your OOP level
+                            <i class="fa fa-check text-primary mr-3"></i>Deep Q-Learning
                         </div>
                     </div>
                 </div>
@@ -133,18 +142,53 @@
                 <!-- Additionnal resources -->
                 <div class="mb-5 mx-n3">
                     <h2 class="mb-4 ml-3">Handful <strong>External</strong> resources</h2>
+                    <p class="ml-3 text-justify">Useful materials for the ground knowledge:
+                    </p>
                     <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-4 px-2 ml-3 justify-content-between">
+                            <div class="card border-0 ml-1 bg-primary shadow-sm pb-2 justify-content-between" style="max-width: 250px;">
+                                <div class="card-body text-white text-center">
+                                    <h4 class="card-title text-white">"Reinforcement Learning: An Introduction" by Sutton & Barto - The definitive book on RL</h4>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-lg-4 px-2 ml-3 justify-content-between">
                             <div class="card border-0 bg-primary shadow-sm mt-2 mb-3 pb-2 ml-1 justify-content-between" style="max-width: 250px;">
                                 <div class="card-body text-white text-center">
-                                    <h4 class="card-title text-white">A nice blog for Pathfinding Algorithm</h4>
+                                    <h4 class="card-title text-white">A repo to follow the book</h4>
                                 </div>
-                                <a href="https://www.redblobgames.com/pathfinding/a-star/introduction.html" target="_blank" class="btn btn-primary px-4 mx-auto mb-4">See Now</a>
+                                <a href="https://github.com/dennybritz/reinforcement-learning" target="_blank" class="btn btn-primary px-4 mx-auto mb-4">See Now</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 px-2 ml-3 justify-content-between">
+                            <div class="card border-0 bg-primary shadow-sm mt-2 mb-3 pb-2 ml-1 justify-content-between" style="max-width: 250px;">
+                                <div class="card-body text-white text-center">
+                                    <h4 class="card-title text-white">CleanRL: A repo with several implementations</h4>
+                                </div>
+                                <a href="https://github.com/vwxyzjn/cleanrl" target="_blank" class="btn btn-primary px-4 mx-auto mb-4">See Now</a>
                             </div>
                         </div>
                     </div>
+                    <p class="ml-3 text-justify">If you want to go further, here are some starting points:</p>
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-4 px-2 ml-3 justify-content-between">
+                            <div class="card border-0 bg-primary shadow-sm pb-2 justify-content-between ml-1" style="max-width: 250px;">
+                                <div class="card-body text-white text-center">
+                                    <h4 class="card-title text-white">A YouTube Channel</h4>
+                                </div>
+                                <a href="https://www.youtube.com/@MachineLearningwithPhil" target="_blank" class="btn btn-primary px-4 mx-auto mb-4">See Now</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 px-2 ml-3 justify-content-between">
+                            <div class="card border-0 bg-primary shadow-sm pb-2 justify-content-between ml-1" style="max-width: 250px;">
+                                <div class="card-body text-white text-center">
+                                    <h4 class="card-title text-white">Lilian Weng's Blog</h4>
+                                </div>
+                                <a href="https://lilianweng.github.io/" target="_blank" class="btn btn-primary px-4 mx-auto mb-4">See Now</a>
+                            </div>
+                        </div>                      
+                    </div>
                 </div>
-
             </div>
             <!-- Left Band End -->
 
@@ -154,32 +198,32 @@
                 <div class="d-flex flex-column text-center bg-primary rounded mb-5 py-5 px-4">
                     <h2 class="text-white text-center">Your Teachers</h2>
                     <div class="position-relative overflow-hidden mb-4 team">
-                        <img class="img-fluid w-75" src="../../img/team_ahmad.jpg" alt="" style="border-radius: 100%;" style="border-radius: 100%;">
+                        <img class="img-fluid w-75" src="../../img/team_mehdi.jpg" alt="" style="border-radius: 100%;" style="border-radius: 100%;">
                         <div
                             class="team-social d-flex align-items-center justify-content-center w-75 h-100 position-over" style="border-radius: 100%;">
                             <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="mailto:ahmad.berjaoui@irt-saintexupery.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                                href="mailto:mehdi.zouitine@irt-saintexupery.com" target="_blank"><i class="fa fa-envelope"></i></a>
                             <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="https://github.com/ma3oun" target="_blank"><i class="fab fa-github"></i></a>
+                                href="https://github.com/MehdiZouitine" target="_blank"><i class="fab fa-github"></i></a>
                             <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
-                                href="https://www.linkedin.com/in/ahmad-berjaoui-a960b4133/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                href="https://www.linkedin.com/in/mehdizouitine/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <h3 class="text-white mb-3">Ahmad Berjaoui</h3>
+                    <h3 class="text-white mb-3">Mehdi Zouitine</h3>
                     <br>
                     <div class="position-relative overflow-hidden mb-4 team">
-                        <img class="img-fluid w-75" style="border-radius: 100%;" src="../../img/team_adil.jpg" alt="" >
+                        <img class="img-fluid w-75" src="../../img/team_eduardo.jpg" alt="" style="border-radius: 100%;" style="border-radius: 100%;">
                         <div
                             class="team-social d-flex align-items-center justify-content-center w-75 h-100 position-over" style="border-radius: 100%;">
                             <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="mailto:adil.zouitine@irt-saintexupery.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                                href="mailto:eduardo.sanchez@irt-saintexupery.com" target="_blank"><i class="fa fa-envelope"></i></a>
                             <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="https://github.com/AdilZouitine" target="_blank"><i class="fab fa-github"></i></a>
+                                href="https://github.com/ehsanchez" target="_blank"><i class="fab fa-github"></i></a>
                             <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
-                                href="https://www.linkedin.com/in/adilztn/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                href="https://www.linkedin.com/in/eduardo-hugo-sanchez-01b0a21b2/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <h3 class="text-white mb-3">Adil Zouitine</h3>
+                    <h3 class="text-white mb-3">Eduardo Sanchez</h3>
                 </div>
             </div>
             <!-- Right Band End -->
